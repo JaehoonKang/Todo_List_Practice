@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,30 @@
   <title>중간 프로젝트 템플릿</title>
   <link rel="stylesheet" href="./index.scss">
 </head>
+
 <body>
   <h1>중간 프로젝트 템플릿</h1>
+
+  <div class="root"></div>
+
+  <template id="post-list">
+
+    <h1>게시글 목록</h1>
+    <button class="post-list__login-btn">로그인</button>
+    <button class="post-list__new-post-btn">새글쓰기</button>
+    <button class="post-list__logout-btn">로그아웃</button>
+
+    <div class="post-list"></div>
+
+  </template>
+
+  <template id="post-item">
+    <p class="post-item__author"></p>
+    <p class="post-item__title"></p>
+  </template>
+
+
   <script src="./index.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,3 @@
-import './index.scss';
+import axios from "axios";
 
-document.querySelector('h1').addEventListener('click', e => {
-  alert('Hello World!');
-});
+
