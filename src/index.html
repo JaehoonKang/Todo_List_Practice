@@ -10,24 +10,42 @@
 </head>
 
 <body>
-  <h1>중간 프로젝트 템플릿</h1>
 
   <div class="root"></div>
 
-  <template id="post-list">
+  <template id="todo-list">
 
-    <h1>게시글 목록</h1>
-    <button class="post-list__login-btn">로그인</button>
-    <button class="post-list__new-post-btn">새글쓰기</button>
-    <button class="post-list__logout-btn">로그아웃</button>
+    <h1>Todo List</h1>
+    <button class="todo-list__login-btn">로그인</button>
+    <button class="todo-list__new-todo-btn">새 목록 만들기</button>
+    <button class="todo-list__logout-btn">로그아웃</button>
 
-    <div class="post-list"></div>
-
+    <div class="todo-list"></div>
   </template>
 
-  <template id="post-item">
-    <p class="post-item__author"></p>
-    <p class="post-item__title"></p>
+  <template id="todo-item">
+    <p class="todo-item__content"></p>
+    <button class="option--complete">완료</button>
+    <button class="option--delete">삭제</button>
+  </template>
+
+  <template id="login">
+    <div class="login">
+      <h1 class="login__title">로그인</h1>
+      <form class="login__form">
+        <input name="username" type="text" class="login__username">
+        <input name="password" type="password" class="login__password">
+        <button>전송</button>
+      </form>
+    </div>
+  </template>
+
+  <template id="newTodo">
+    <form class="newTodo__form">
+      <h1 class="newTodo__header">새 할일</h1>
+      <input name="body" type="text" class="newTodo__title">
+      <button>전송</button>
+    </form>
   </template>
 
 
